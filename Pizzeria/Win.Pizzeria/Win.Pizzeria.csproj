@@ -103,13 +103,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Login.png" />
+    <EmbeddedResource Include="Resources\Login.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Logo.png" />
+    <EmbeddedResource Include="Resources\Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ErrorLogin.png" />
+    <EmbeddedResource Include="Resources\ErrorLogin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

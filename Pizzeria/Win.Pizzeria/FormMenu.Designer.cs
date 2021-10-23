@@ -37,7 +37,10 @@
             this.pagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pagoEnLineaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suministrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.equipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perecederoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiposDePagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +60,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pedidosToolStripMenuItem,
             this.pagosToolStripMenuItem,
-            this.seguridadToolStripMenuItem});
+            this.seguridadToolStripMenuItem,
+            this.suministrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -100,7 +104,7 @@
             // pagosToolStripMenuItem
             // 
             this.pagosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pagoEnLineaToolStripMenuItem});
+            this.tiposDePagoToolStripMenuItem});
             this.pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
             this.pagosToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.pagosToolStripMenuItem.Text = "Pagos";
@@ -120,12 +124,35 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
-            // pagoEnLineaToolStripMenuItem
+            // suministrosToolStripMenuItem
             // 
-            this.pagoEnLineaToolStripMenuItem.Name = "pagoEnLineaToolStripMenuItem";
-            this.pagoEnLineaToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
-            this.pagoEnLineaToolStripMenuItem.Text = "Tipos de pagos";
-            this.pagoEnLineaToolStripMenuItem.Click += new System.EventHandler(this.pagoEnLineaToolStripMenuItem_Click);
+            this.suministrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.equipoToolStripMenuItem,
+            this.perecederoToolStripMenuItem});
+            this.suministrosToolStripMenuItem.Name = "suministrosToolStripMenuItem";
+            this.suministrosToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.suministrosToolStripMenuItem.Text = "Suministros";
+            // 
+            // equipoToolStripMenuItem
+            // 
+            this.equipoToolStripMenuItem.Name = "equipoToolStripMenuItem";
+            this.equipoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.equipoToolStripMenuItem.Text = "Equipo";
+            this.equipoToolStripMenuItem.Click += new System.EventHandler(this.equipoToolStripMenuItem_Click);
+            // 
+            // perecederoToolStripMenuItem
+            // 
+            this.perecederoToolStripMenuItem.Name = "perecederoToolStripMenuItem";
+            this.perecederoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.perecederoToolStripMenuItem.Text = "Perecedero";
+            this.perecederoToolStripMenuItem.Click += new System.EventHandler(this.perecederoToolStripMenuItem_Click);
+            // 
+            // tiposDePagoToolStripMenuItem
+            // 
+            this.tiposDePagoToolStripMenuItem.Name = "tiposDePagoToolStripMenuItem";
+            this.tiposDePagoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.tiposDePagoToolStripMenuItem.Text = "Tipos de pago";
+            this.tiposDePagoToolStripMenuItem.Click += new System.EventHandler(this.tiposDePagoToolStripMenuItem_Click);
             // 
             // FormMenu
             // 
@@ -159,6 +186,9 @@
         private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pagoEnLineaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem suministrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem equipoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem perecederoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tiposDePagoToolStripMenuItem;
     }
 }

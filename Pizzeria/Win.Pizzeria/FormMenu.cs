@@ -48,6 +48,13 @@ namespace Win.Pizzeria
             FormNuestrosPostres.Show();
         }
 
+        private void equipoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FormEquipo = new FormEquipo();
+            FormEquipo.MdiParent = this;
+            FormEquipo.Show();
+        }
+
         private void bebidasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var FormBebidas = new FormBebidas();
@@ -55,11 +62,18 @@ namespace Win.Pizzeria
             FormBebidas.Show();
         }
 
-        private void pagoEnLineaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tiposDePagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var FormPagos = new FormPagos();
             FormPagos.MdiParent = this;
             FormPagos.Show();
+        }
+
+        private void perecederoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FormPerecederos = new FormPerecederos();
+            FormPerecederos.MdiParent = this;
+            FormPerecederos.Show();
         }
     }
 }

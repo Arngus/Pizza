@@ -32,15 +32,18 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuestrasPizzasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuestrosPostresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bebidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiposDePagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suministrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.equipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perecederoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tiposDePagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesDeNuestrasPizzasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDeFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +64,8 @@
             this.pedidosToolStripMenuItem,
             this.pagosToolStripMenuItem,
             this.seguridadToolStripMenuItem,
-            this.suministrosToolStripMenuItem});
+            this.suministrosToolStripMenuItem,
+            this.reportesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -73,8 +77,8 @@
             // 
             this.pedidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuestrasPizzasToolStripMenuItem,
-            this.nuestrosPostresToolStripMenuItem,
-            this.bebidasToolStripMenuItem});
+            this.clientesToolStripMenuItem,
+            this.facturaToolStripMenuItem});
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
             this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
@@ -83,23 +87,23 @@
             // nuestrasPizzasToolStripMenuItem
             // 
             this.nuestrasPizzasToolStripMenuItem.Name = "nuestrasPizzasToolStripMenuItem";
-            this.nuestrasPizzasToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.nuestrasPizzasToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.nuestrasPizzasToolStripMenuItem.Text = "Nuestras Pizzas";
             this.nuestrasPizzasToolStripMenuItem.Click += new System.EventHandler(this.nuestrasPizzasToolStripMenuItem_Click);
             // 
-            // nuestrosPostresToolStripMenuItem
+            // clientesToolStripMenuItem
             // 
-            this.nuestrosPostresToolStripMenuItem.Name = "nuestrosPostresToolStripMenuItem";
-            this.nuestrosPostresToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
-            this.nuestrosPostresToolStripMenuItem.Text = "Nuestros Postres";
-            this.nuestrosPostresToolStripMenuItem.Click += new System.EventHandler(this.nuestrosPostresToolStripMenuItem_Click);
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
-            // bebidasToolStripMenuItem
+            // facturaToolStripMenuItem
             // 
-            this.bebidasToolStripMenuItem.Name = "bebidasToolStripMenuItem";
-            this.bebidasToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
-            this.bebidasToolStripMenuItem.Text = "Bebidas";
-            this.bebidasToolStripMenuItem.Click += new System.EventHandler(this.bebidasToolStripMenuItem_Click);
+            this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.facturaToolStripMenuItem.Text = "Factura";
+            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // pagosToolStripMenuItem
             // 
@@ -108,6 +112,13 @@
             this.pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
             this.pagosToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.pagosToolStripMenuItem.Text = "Pagos";
+            // 
+            // tiposDePagoToolStripMenuItem
+            // 
+            this.tiposDePagoToolStripMenuItem.Name = "tiposDePagoToolStripMenuItem";
+            this.tiposDePagoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.tiposDePagoToolStripMenuItem.Text = "Tipos de pago";
+            this.tiposDePagoToolStripMenuItem.Click += new System.EventHandler(this.tiposDePagoToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
@@ -136,23 +147,39 @@
             // equipoToolStripMenuItem
             // 
             this.equipoToolStripMenuItem.Name = "equipoToolStripMenuItem";
-            this.equipoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.equipoToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.equipoToolStripMenuItem.Text = "Equipo";
             this.equipoToolStripMenuItem.Click += new System.EventHandler(this.equipoToolStripMenuItem_Click);
             // 
             // perecederoToolStripMenuItem
             // 
             this.perecederoToolStripMenuItem.Name = "perecederoToolStripMenuItem";
-            this.perecederoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.perecederoToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.perecederoToolStripMenuItem.Text = "Perecedero";
             this.perecederoToolStripMenuItem.Click += new System.EventHandler(this.perecederoToolStripMenuItem_Click);
             // 
-            // tiposDePagoToolStripMenuItem
+            // reportesToolStripMenuItem
             // 
-            this.tiposDePagoToolStripMenuItem.Name = "tiposDePagoToolStripMenuItem";
-            this.tiposDePagoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.tiposDePagoToolStripMenuItem.Text = "Tipos de pago";
-            this.tiposDePagoToolStripMenuItem.Click += new System.EventHandler(this.tiposDePagoToolStripMenuItem_Click);
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reportesDeNuestrasPizzasToolStripMenuItem,
+            this.reporteDeFacturasToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
+            // reportesDeNuestrasPizzasToolStripMenuItem
+            // 
+            this.reportesDeNuestrasPizzasToolStripMenuItem.Name = "reportesDeNuestrasPizzasToolStripMenuItem";
+            this.reportesDeNuestrasPizzasToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.reportesDeNuestrasPizzasToolStripMenuItem.Text = "Reportes de Nuestras Pizzas";
+            this.reportesDeNuestrasPizzasToolStripMenuItem.Click += new System.EventHandler(this.reportesDeNuestrasPizzasToolStripMenuItem_Click);
+            // 
+            // reporteDeFacturasToolStripMenuItem
+            // 
+            this.reporteDeFacturasToolStripMenuItem.Name = "reporteDeFacturasToolStripMenuItem";
+            this.reporteDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(269, 26);
+            this.reporteDeFacturasToolStripMenuItem.Text = "Reporte de Facturas";
+            this.reporteDeFacturasToolStripMenuItem.Click += new System.EventHandler(this.reporteDeFacturasToolStripMenuItem_Click);
             // 
             // FormMenu
             // 
@@ -181,8 +208,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuestrasPizzasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nuestrosPostresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bebidasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
@@ -190,5 +215,10 @@
         private System.Windows.Forms.ToolStripMenuItem equipoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem perecederoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiposDePagoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem facturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesDeNuestrasPizzasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteDeFacturasToolStripMenuItem;
     }
 }
